@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anselm Hannemann: picture-Element</title>
+        <!-- code highlighting via prism.js --> 
+        <link rel="stylesheet" href="assets/prism.css">
+
+        <style type="text/css">
+            body{
+                background: #ccc;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+            }
+
+            .wrapper{
+                max-width: 100%;
+                margin: 0em auto;
+            }
+
+            pre{
+                box-shadow: inset 0 0 15px rgba(0,0,0,.75);
+            }
+
+        </style>
+        <script> for(var i=0; i < 1000;i++){console.log("bla");};</script>
+    </head>
+    <body>
+        <!-- START PICTURE-ELEMENT TEST -->
+        <div class="wrapper">
+
+            <!-- START EXPLANATION -->
+            <h1>&lt;picture&gt;-element demo</h1>
+            <p><em>This is a test page for the picture element prototype.</em></p>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Load the page large browser window</li>
+                <li>On large window you will see Obama in his office on his desk phoning.</li>
+                <li>Now narrow your UA window</li>
+                <li>Reload the page</li>
+                <li>You now will see an other crop of the image: Obama on the phone.</li>
+            </ol>
+            <!-- END EXPLANATION -->
+
+            <!-- picture-element -->
+            <picture width="240" height="160">
+                <source media="(min-width: 40em)" src="obama_small.jpg">
+                <source media="(max-width: 960px)" src="obama_crop.png">
+                
+                <!-- fallback img-element if picture-element is not supported -->
+                <img src="obama_small.jpg">
+                
+                <!-- a11y: providing alternate text -->
+                <p>Obama on his desk during a phone call</p>
+            </picture>
+        </div>
+        <!-- END PICTURE-ELEMENT TEST -->
+        <hr>
+        <!-- START CODE / SYNTAX -->
+        <div class="wrapper highlight">
+            <h2>The source code:</h2>
+            <pre>
+                <code class="language-markup">
+&lt;!-- picture-element -->
+&lt;picture width="240" height="160">
+    &lt;source media="(min-width: 40em)" src="obama_small.jpg">
+    &lt;source media="(max-width: 960px)" src="obama_crop.png">
+    
+    &lt;!-- fallback img-element if picture-element is not supported -->
+    &lt;img src="obama_small.jpg">
+                
+    &lt;!-- a11y: providing alternate text -->
+    &lt;p>Obama on his desk during a phone call&lt;/p>
+&lt;/picture>               
+                </code>
+            </pre>
+        </div>
+        <!-- END CODE / SYNTAX -->
+
+        <!-- code highlighting via prism.js --> 
+        <script src="assets/prism.js"></script>
+    </body>    
+</html>
