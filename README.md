@@ -1,4 +1,4 @@
-demos
+Demos
 =====
 
-Demos and tests to show off how picture works. 
+Demos and tests to show off how ```<picture>``` works. 
