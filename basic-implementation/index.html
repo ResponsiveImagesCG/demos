@@ -35,27 +35,40 @@
             <p><strong>Instructions:</strong></p>
             <ol>
                 <li>Load the page large browser window</li>
-                <li>On large window you will see Obama in his office on his desk phoning.</li>
+                <li>On large window you will see the whole castle-set with lake and sky.</li>
                 <li>Now narrow your UA window</li>
                 <li>Reload the page</li>
-                <li>You now will see an other crop of the image: Obama on the phone.</li>
+                <li>You now will see an other crop of the image: just the main part of the castle.</li>
+            </ol>
+            <h2>Resolutions:</h2>
+            <ol>
+                <li>240px * 160px</li>
+                <li>480px * 320px</li>
+                <li>960px * 640px</li>
+                <li>monochrome</li>
             </ol>
             <!-- END EXPLANATION -->
 
             <!-- picture-element -->
-            <picture width="240" height="160">
-                <source media="(min-width: 40em)" src="obama_small.jpg">
-                <source media="(max-width: 960px)" src="obama_crop.png">
-                
+            <picture>
+
+                <source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
+                <source media="(min-width: 480px) and (max-width: 639px)" src="test_landscape_1@2x.jpg">
+                <source media="(min-width: 640px)" src="test_landscape_1@4x.jpg">
+                <source media="monochrome" src="test_landscape_1@monochrome.jpg">
+                <source media="print" src="test_landscape_1@monochrome.jpg">
+
                 <!-- fallback img-element if picture-element is not supported -->
-                <img src="obama_small.jpg">
+                <img src="test_landscape_1@2x.jpg">
                 
                 <!-- a11y: providing alternate text -->
-                <p>Obama on his desk during a phone call</p>
+                <p>Nymphenburg Castle in Munich during sunset</p>
             </picture>
         </div>
         <!-- END PICTURE-ELEMENT TEST -->
+
         <hr>
+        
         <!-- START CODE / SYNTAX -->
         <div class="wrapper highlight">
             <h2>The source code:</h2>
