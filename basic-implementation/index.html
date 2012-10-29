@@ -75,15 +75,18 @@
             <pre>
                 <code class="language-markup">
 &lt;!-- picture-element -->
-&lt;picture width="240" height="160">
-    &lt;source media="(min-width: 40em)" src="obama_small.jpg">
-    &lt;source media="(max-width: 960px)" src="obama_crop.png">
-    
+&lt;picture>
+    &lt;source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
+    &lt;source media="(min-width: 480px) and (max-width: 639px)" src="test_landscape_1@2x.jpg">
+    &lt;source media="(min-width: 640px)" src="test_landscape_1@4x.jpg">
+    &lt;source media="monochrome" src="test_landscape_1@monochrome.jpg">
+    &lt;source media="print" src="test_landscape_1@monochrome.jpg">
+
     &lt;!-- fallback img-element if picture-element is not supported -->
-    &lt;img src="obama_small.jpg">
+    &lt;img src="test_landscape_1@2x.jpg">
                 
     &lt;!-- a11y: providing alternate text -->
-    &lt;p>Obama on his desk during a phone call&lt;/p>
+    &lt;p>Nymphenburg Castle in Munich during sunset&lt;/p>
 &lt;/picture>               
                 </code>
             </pre>
