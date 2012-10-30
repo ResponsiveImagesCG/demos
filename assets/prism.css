@@ -98,3 +98,6 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+.token a {
+	color: inherit;
+}
