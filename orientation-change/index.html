@@ -29,7 +29,7 @@
         <div class="wrapper">
 
             <!-- START EXPLANATION -->
-            <h1>&lt;picture&gt;-element art-direction demo</h1>
+            <h1>&lt;picture&gt;-element orientation-change demo</h1>
             <p><em>This is a test page for the picture element prototype. The demo demonstrates how the &lt;picture&gt;-element can be used for the orientation based art direction use case (particularly the example of the Nokia Meego browser) explained in section 4.1 of the <a href="http://usecases.responsiveimages.org/#art-direction">Use Cases and Requirements for Standardizing Responsive Images</a> document. </em></p>
             <p><em>Author: <a href="http://shanehudson.net/">Shane Hudson</a> / <a href="https://twitter.com/shanehudson">@shanehudson</a></em></p>
             <p><strong>Instructions:</strong></p>
@@ -46,20 +46,22 @@
                 <li>600px * 168px</li>
                 <li>900px * 252px</li>
             </ol>
+
+            <p>Image credits to <a href="http://www.potatoestomatoes.co.uk/">PotatoesTomatoes.co.uk</a> and <a href="http://edwardolivergreer.me.uk/">Edd Greer</a>.</p>
             <!-- END EXPLANATION -->
 
             <!-- picture-element -->
             <picture>
 
-                <source media="(max-width: 30em)" src="img/chrome.jpg">
-                <source media="(min-width: 30em)  and (max-width: 48em)" src="img/chrome@tablet.jpg">
-                <source media="(min-width: 48em)" src="img/chrome@desktop.jpg">
+                <source media="(max-width: 30em)" src="img/iphone.png">
+                <source media="(min-width: 30em)  and (max-width: 48em)" src="img/iphone@tablet.png">
+                <source media="(min-width: 48em)" src="img/iphone@desktop.png">
 
                 <!-- fallback img-element if picture-element is not supported -->
-                <img src="img/chrome.png">
+                <img src="img/iphone.png">
                 
                 <!-- a11y: providing alternate text -->
-                <p>The chrome web browser showing the RICG website.</p>
+                <p>The iPhone Safari web browser showing the RICG website.</p>
             </picture>
         </div>
         <!-- END PICTURE-ELEMENT TEST -->
@@ -72,15 +74,15 @@
             <pre>
 <code class="language-markup">
 &lt;picture&gt;
-    &lt;source media="(max-width: 30em)" src="img/chrome.jpg"&gt;
-    &lt;source media="(min-width: 30em)  and (max-width: 48em)" src="img/chrome@tablet.jpg"&gt;
-    &lt;source media="(min-width: 48em)" src="img/chrome@desktop.jpg"&gt;
+    &lt;source media="(max-width: 30em)" src="img/iphone.jpg"&gt;
+    &lt;source media="(min-width: 30em)  and (max-width: 48em)" src="img/iphone@tablet.jpg"&gt;
+    &lt;source media="(min-width: 48em)" src="img/iphone@desktop.jpg"&gt;
 
     &lt;!-- fallback img-element if picture-element is not supported --&gt;
-    &lt;img src="img/chrome.jpg"&gt;
+    &lt;img src="img/iphone.jpg"&gt;
     
     &lt;!-- a11y: providing alternate text --&gt;
-    &lt;p&gt;The chrome web browser showing the RICG website.&lt;/p&gt;
+    &lt;p&gt;The iPhone Safari web browser showing the RICG website.&lt;/p&gt;
 &lt;/picture&gt;             
 </code>
             </pre>
