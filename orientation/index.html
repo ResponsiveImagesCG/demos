@@ -39,34 +39,21 @@
             </ol>
             <h2>Resolutions / Breakpoints</h2>
             <ol>
-                <li>@mobile: 320px * 192px (7kb)</li>
-                <li>@wide-mobile: 480px * 288px (17kb)</li>
-                <li>@tablet: 768px * 514px (41kb)</li>
-                <li>@desktop: 1024px * 686px (90kb)</li>
-                <li>@highres: 1280px * 852px (253kb)</li>
+                <li>@portrait: 320px * 192px (7kb)</li>
+                <li>@landscape: 480px * 288px (17kb)</li>
             </ol>
             <!-- END EXPLANATION -->
         </header>
         <section id="content">
 
             <!-- start: picture-element -->
-            <picture width="100%" height="100%">
+            <picture>
 
                 <!-- start: Handheld-Devices -->
-                <!-- Source intended for: Mobile Layout -->
-                <source media="(max-width: 30em)" src="img/yacht_race@mobile.jpg">
-                <!-- Source intended for: Wide Mobile Layout -->
-                <source media="(min-width: 30em) and (max-width: 48em)" src="img/yacht_race@wide-mobile.jpg">
-                <!-- Source intended for: Tablet Layout -->
-                <source media="(min-width: 48em) and (max-width: 60em)" src="img/yacht_race@tablet.jpg">
-                <!-- end: Handheld Devices -->
-
-                <!-- start: Stationary Devices -->
-                <!-- Source intended for: Notebooks and normal Desktop Layouts -->
-                <source media="(min-width: 60em) and (max-width: 80em)" src="img/yacht_race@desktop.jpg">
-                <!-- Source intended for: Notebooks and normal Desktop Layouts -->
-                <source media="(min-width: 80em)" src="img/yacht_race@hires.jpg">
-                <!-- end: Stationary Devices -->
+                <!-- Source intended for: portrait Layout -->
+                <source media="(orientation: portrait)" src="img/yacht_race@portrait.jpg">
+                <!-- Source intended for: landscape Layout -->
+                <source media="(orientation: landscape)" src="img/yacht_race@landscape.jpg">
                 
                 <!-- start: fallback img-element if picture-element is not supported -->
                 <img src="img/yacht_race@fallback.jpg" alt="A very exciting yacht race.">
@@ -87,20 +74,10 @@
 &lt;picture width=&quot;100%&quot; height=&quot;100%&quot;&gt;
 
     &lt;!-- start: Handheld-Devices --&gt;
-    &lt;!-- Source intended for: Mobile Layout --&gt;
-    &lt;source media=&quot;(max-width: 30em)&quot; src=&quot;img/yacht_race@mobile.jpg&quot;&gt;
-    &lt;!-- Source intended for: Wide Mobile Layout --&gt;
-    &lt;source media=&quot;(min-width: 30em) and (max-width: 48em)&quot; src=&quot;img/yacht_race@wide-mobile.jpg&quot;&gt;
-    &lt;!-- Source intended for: Tablet Layout --&gt;
-    &lt;source media=&quot;(min-width: 48em) and (max-width: 60em)&quot; src=&quot;img/yacht_race@tablet.jpg&quot;&gt;
-    &lt;!-- end: Handheld Devices --&gt;
-
-    &lt;!-- start: Stationary Devices --&gt;
-    &lt;!-- Source intended for: Notebooks and normal Desktop Layouts --&gt;
-    &lt;source media=&quot;(min-width: 60em) and (max-width: 80em)&quot; src=&quot;img/yacht_race@desktop.jpg&quot;&gt;
-    &lt;!-- Source intended for: Notebooks and normal Desktop Layouts --&gt;
-    &lt;source media=&quot;(min-width: 80em)&quot; src=&quot;img/yacht_race@hires.jpg&quot;&gt;
-    &lt;!-- end: Stationary Devices --&gt;
+    &lt;!-- Source intended for: Portrait Layout --&gt;
+    &lt;source media=&quot;(orientation: portrait)&quot; src=&quot;img/yacht_race@portrait.jpg&quot;&gt;
+    &lt;!-- Source intended for: Landscape Layout --&gt;
+    &lt;source media=&quot;(orientation: Landscape)&quot; src=&quot;img/yacht_race@Landscape.jpg&quot;&gt;
     
     &lt;!-- start: fallback img-element if picture-element is not supported --&gt;
     &lt;img src=&quot;img/yacht_race@fallback.jpg&quot; alt=&quot;A very exciting yacht race.&quot;&gt;
