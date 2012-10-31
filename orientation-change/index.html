@@ -46,20 +46,22 @@
                 <li>600px * 168px</li>
                 <li>900px * 252px</li>
             </ol>
+
+            <p>Image credits to <a href="http://www.potatoestomatoes.co.uk/">PotatoesTomatoes.co.uk</a> and <a href="http://edwardolivergreer.me.uk/">Edd Greer</a>.</p>
             <!-- END EXPLANATION -->
 
             <!-- picture-element -->
             <picture>
 
-                <source media="(max-width: 30em)" src="img/chrome.jpg">
-                <source media="(min-width: 30em)  and (max-width: 48em)" src="img/chrome@tablet.jpg">
-                <source media="(min-width: 48em)" src="img/chrome@desktop.jpg">
+                <source media="(max-width: 30em)" src="img/iphone.png">
+                <source media="(min-width: 30em)  and (max-width: 48em)" src="img/iphone@tablet.png">
+                <source media="(min-width: 48em)" src="img/iphone@desktop.png">
 
                 <!-- fallback img-element if picture-element is not supported -->
-                <img src="img/chrome.jpg">
+                <img src="img/iphone.png">
                 
                 <!-- a11y: providing alternate text -->
-                <p>The chrome web browser showing the RICG website.</p>
+                <p>The iPhone Safari web browser showing the RICG website.</p>
             </picture>
         </div>
         <!-- END PICTURE-ELEMENT TEST -->
@@ -72,15 +74,15 @@
             <pre>
 <code class="language-markup">
 &lt;picture&gt;
-    &lt;source media="(max-width: 30em)" src="img/chrome.jpg"&gt;
-    &lt;source media="(min-width: 30em)  and (max-width: 48em)" src="img/chrome@tablet.jpg"&gt;
-    &lt;source media="(min-width: 48em)" src="img/chrome@desktop.jpg"&gt;
+    &lt;source media="(max-width: 30em)" src="img/iphone.jpg"&gt;
+    &lt;source media="(min-width: 30em)  and (max-width: 48em)" src="img/iphone@tablet.jpg"&gt;
+    &lt;source media="(min-width: 48em)" src="img/iphone@desktop.jpg"&gt;
 
     &lt;!-- fallback img-element if picture-element is not supported --&gt;
-    &lt;img src="img/chrome.jpg"&gt;
+    &lt;img src="img/iphone.jpg"&gt;
     
     &lt;!-- a11y: providing alternate text --&gt;
-    &lt;p&gt;The chrome web browser showing the RICG website.&lt;/p&gt;
+    &lt;p&gt;The iPhone Safari web browser showing the RICG website.&lt;/p&gt;
 &lt;/picture&gt;             
 </code>
             </pre>
