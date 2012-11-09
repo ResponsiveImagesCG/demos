@@ -18,41 +18,10 @@
     <script> for(var i=0; i < 1000;i++){console.log("bla");};</script>
 </head>
 <body>
-    <header class="doc-head">
 
-    </header>
-
-    <div id="main" class="wrapper">
-
-        <header>
-            <!-- START EXPLANATION -->
-            <h1>A responsive image, a fluid grid and the &lt;picture&gt;-element</h1>
-            <p><em>This is a test page for the picture element prototype. The Demo has been built on top of a fluid Grid with <strong>5 Breakpoint</strong> as mentioned below. The aim of this document is to show the benefit of an individual image resource for each of this breakpoints. The demo follows a <strong>Mobile First</strong> approach!</em></p>
-            <p><em>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> / <a href="https://twitter.com/ixisio">@ixisio</a></em></p>
-            <h2>Instructions to see the magic in action</h2>
-            <ol>
-                <li>Load the page <strong>small</strong> browser window. </li>
-                <li>Now increase the size of your UA window</li>
-                <li>You will see how ugly the image appears.</li>
-                <li>Reload the page</li>
-                <li>You now will see an other (breakpoint optimized) image.</li>
-            </ol>
-            <h2>Resolutions / Breakpoints</h2>
-            <ol>
-                <li>@portrait: 320px * 192px (7kb)</li>
-                <li>@landscape: 480px * 288px (17kb)</li>
-            </ol>
-            <!-- END EXPLANATION -->
-        </header>
-        <section id="content">
-
-            <!-- start: picture-element -->
             <picture>
-
-                <!-- start: Handheld-Devices -->
-                <!-- Source intended for: portrait Layout -->
                 <source media="(orientation: portrait)" src="img/yacht_race@portrait.jpg">
-                <!-- Source intended for: landscape Layout -->
+       
                 <source media="(orientation: landscape)" src="img/yacht_race@landscape.jpg">
                 
                 <!-- start: fallback img-element if picture-element is not supported -->
@@ -64,10 +33,11 @@
                 <!-- end: alternate text -->
 
             </picture>
-            <!-- end: picture-element -->
+            <figcaption>
+            <p>This is a test page for the picture element prototype. The Demo has been built on top of a fluid Grid with 5 Breakpoints. The aim of this document is to show the benefit of an individual image resource for each of this breakpoints. The demo follows a Mobile First approach.</p>
+            </figcaption>
 
-            <!-- START CODE / SYNTAX -->
-            <h2>The source code:</h2>
+            <h2>HTML</h2>
             <pre>
                 <code class="language-markup">
 &lt;!-- start: picture-element --&gt;
@@ -93,6 +63,11 @@
             </pre>
              <!-- END CODE / SYNTAX -->
 
+        </section>
+        
+        <section>
+        <h2>Credits</h2>
+        <p><em>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> / <a href="https://twitter.com/ixisio">@ixisio</a></em></p>
         </section>
 
         <!-- code highlighting via prism.js --> 
