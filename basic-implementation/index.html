@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>RICG Demo: Crop resize</title>
+<title>Simple example demo</title>
 <meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
 <meta name="author" content ="Anselm Hannemann, contact: info@anselm-hannemann.com">
 <meta property="og:url" content="http://responsiveimages.org">
@@ -25,11 +25,12 @@
   <h1 class="logo"><a href="http://responsiveimages.org"><img src="http://responsiveimages.org/img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
 </header>
 <div class="main">
-<section class="picturedemo">
-  <h1><a class="navlink" href="http://demos.responsiveimages.org">Demos</a> <span>Crop resize</span></h1>
-  <figure>
-    <picture>
-      <source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
+  <div>
+    <section class="picturedemo">
+      <h1><a class="navlink" href="http://demos.responsiveimages.org">Demos</a> <span>Simple example</span></h1>
+      <figure>
+        <picture>
+        <source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
       <source media="(min-width: 480px) and (max-width: 639px)" src="test_landscape_1@2x.jpg">
       <source media="(min-width: 640px)" src="test_landscape_1@4x.jpg">
       <source media="monochrome" src="test_landscape_1@monochrome.jpg">
@@ -50,8 +51,7 @@
 
 <section>
   <h2>HTML</h2>
-  <code class="language-markup">
-&lt;!-- picture-element -->
+<div class="demosource"><code class="language-markup">&lt;!-- picture-element -->
 &lt;picture>
     &lt;source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
     &lt;source media="(min-width: 480px) and (max-width: 639px)" src="test_landscape_1@2x.jpg">
@@ -64,12 +64,13 @@
                 
     &lt;!-- alternate text -->
     &lt;p>Nymphenburg Castle in Munich during sunset&lt;/p>
-&lt;/picture></code>
+&lt;/picture></code></div>
 	</section>
 <section>
   <h2>Credits</h2>
   <p><em>Author: <a href="http://anselm-hannemann.com/">Anselm Hannemann</a> / <a href="https://twitter.com/anselmhannemann">@anselmhannemann</a></em></p>
 </section>
+</div>
 </div>
 <!-- code highlighting via prism.js --> 
 <script src="../assets/prism.js"></script>

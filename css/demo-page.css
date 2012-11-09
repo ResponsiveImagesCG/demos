@@ -39,6 +39,10 @@ a.navlink:hover {
 }
 
 
+.demosource{
+	background-color: #f5f2f0; 
+	
+}
 .demosource pre{
 	border: 1px solid red;
 	overflow: hidden;
@@ -55,7 +59,3 @@ a.navlink:hover {
  word-wrap: break-word !important;
 }
 
-.demowrapper{
-	background-color: #f5f2f0; 
-	padding: .5em;
-}
