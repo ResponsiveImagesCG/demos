@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>RICG Demo: Art direction</title>
+<title>Art direction Demo</title>
 <meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
 <meta name="author" content ="Shane Hudson, contact: mail@shanehudson.net">
 <meta property="og:url" content="http://responsiveimages.org">
@@ -49,8 +49,8 @@
     <!-- START CODE / SYNTAX -->
     <section class="demosource wrapper highlight">
       <h2>HTML</h2>
-  <div style="background-color: #f5f2f0; padding: .5em">    
-    <code style="width: 100%; overflow:auto;" class="language-markup">&lt;picture&gt;
+  <div class="demowrapper">    
+    <code class="language-markup">&lt;picture&gt;
   &lt;source media="(max-width: 30em)" src="img/iphone.jpg"&gt;
   &lt;source media="(min-width: 30em) and (max-width: 48em)" src="img/iphone@tablet.jpg"&gt;
   &lt;source media="(min-width: 48em)" src="img/iphone@desktop.jpg"&gt;
@@ -80,7 +80,9 @@
 </footer>
 
 <!-- code highlighting via prism.js --> 
-<script src="../assets/prism.js"></script> 
+ <!-- code highlighting via prism.js --> 
+        <script src="../assets/prism.js"></script>
 <script src="../js/picturefill.js"></script>
+<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName','responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
 </body>
 </html>

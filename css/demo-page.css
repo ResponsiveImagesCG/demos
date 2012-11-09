@@ -55,3 +55,7 @@ a.navlink:hover {
  word-wrap: break-word !important;
 }
 
+.demowrapper{
+	background-color: #f5f2f0; 
+	padding: .5em;
+}
