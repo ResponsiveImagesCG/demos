@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RICG Demo: &lt;picture&gt;-element</title>
+        <meta name="author" content ="Shane Hudson, contact: mail@shanehudson.net">
+
+        <!-- code highlighting via prism.js --> 
+        <link rel="stylesheet" href="../assets/prism.css">
+
+        <style type="text/css">
+            body{
+                background: #ccc;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+            }
+
+            .wrapper{
+                max-width: 100%;
+                margin: 0em auto;
+            }
+
+            pre{
+                box-shadow: inset 0 0 15px rgba(0,0,0,.75);
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- START PICTURE-ELEMENT TEST -->
+        <div class="wrapper">
+
+            <!-- START EXPLANATION -->
+            <h1>&lt;picture&gt;-element art-direction demo</h1>
+            <p><em>This is a test page for the picture element prototype. The demo demonstrates how the &lt;picture&gt;-element can be used for the orientation based art direction use case (particularly the example of the Nokia Meego browser) explained in section 4.1 of the <a href="http://usecases.responsiveimages.org/#art-direction">Use Cases and Requirements for Standardizing Responsive Images</a> document. </em></p>
+            <p><em>Author: <a href="http://shanehudson.net/">Shane Hudson</a> / <a href="https://twitter.com/shanehudson">@shanehudson</a></em></p>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Load the page large browser window</li>
+                <li>On large window you will see the landscape browser.</li>
+                <li>Now narrow your UA window</li>
+                <li>Reload the page</li>
+                <li>You now will see another image showing the narrow browser.</li>
+            </ol>
+            <h2>Resolutions:</h2>
+            <ol>
+                <li>320px * 249px</li>
+                <li>600px * 168px</li>
+                <li>900px * 252px</li>
+            </ol>
+            <p>Image credits to <a href="http://www.potatoestomatoes.co.uk/">PotatoesTomatoes.co.uk</a> and <a href="http://edwardolivergreer.me.uk/">Edd Greer</a>.</p>
+            <!-- END EXPLANATION -->
+
+            <!-- picture-element -->
+            <picture>
+
+                <source media="(max-width: 30em)" src="img/iphone.png">
+                <source media="(min-width: 30em)  and (max-width: 48em)" src="img/iphone@tablet.png">
+                <source media="(min-width: 48em)" src="img/iphone@desktop.png">
+
+                <!-- fallback img-element if picture-element is not supported -->
+                <img src="img/iphone.png">
+                
+                <!-- a11y: providing alternate text -->
+                <p>The iPhone Safari web browser showing the RICG website.</p>
+            </picture>
+        </div>
+        <!-- END PICTURE-ELEMENT TEST -->
+
+        <hr>
+        
+        <!-- START CODE / SYNTAX -->
+        <div class="wrapper highlight">
+            <h2>The source code:</h2>
+            <pre>
+<code class="language-markup">
+&lt;picture&gt;
+    &lt;source media="(max-width: 30em)" src="img/iphone.jpg"&gt;
+    &lt;source media="(min-width: 30em)  and (max-width: 48em)" src="img/iphone@tablet.jpg"&gt;
+    &lt;source media="(min-width: 48em)" src="img/iphone@desktop.jpg"&gt;
+
+    &lt;!-- fallback img-element if picture-element is not supported --&gt;
+    &lt;img src="img/iphone.jpg"&gt;
+    
+    &lt;!-- a11y: providing alternate text --&gt;
+    &lt;p&gt;The iPhone Safari web browser showing the RICG website.&lt;/p&gt;
+&lt;/picture&gt;             
+</code>
+            </pre>
+        </div>
+        <!-- END CODE / SYNTAX -->
+
+        <!-- code highlighting via prism.js --> 
+        <script src="../assets/prism.js"></script>
+    </body>    
+</html>

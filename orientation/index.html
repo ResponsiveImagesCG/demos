@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html lang="en" class="ie-lte8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>RICG Demo: ResponsiveImages.org</title>
+    <meta name="author" content ="Andreas Klein, contact: mail@andreasklein.org">
+   
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- demo styles, responsive grid -->
+    <link rel="stylesheet" href="css/ri-demo.css">
+    <link rel="stylesheet" href="http://1.cuzillion.com/bin/resource.cgi?type=css&sleep=2&n=1&t=1351605667">
+
+
+    <!-- code highlighting via prism.js --> 
+    <link rel="stylesheet" href="../assets/prism.css">
+    <script> for(var i=0; i < 1000;i++){console.log("bla");};</script>
+</head>
+<body>
+    <header class="doc-head">
+
+    </header>
+
+    <div id="main" class="wrapper">
+
+        <header>
+            <!-- START EXPLANATION -->
+            <h1>A responsive image, a fluid grid and the &lt;picture&gt;-element</h1>
+            <p><em>This is a test page for the picture element prototype. The Demo has been built on top of a fluid Grid with <strong>5 Breakpoint</strong> as mentioned below. The aim of this document is to show the benefit of an individual image resource for each of this breakpoints. The demo follows a <strong>Mobile First</strong> approach!</em></p>
+            <p><em>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> / <a href="https://twitter.com/ixisio">@ixisio</a></em></p>
+            <h2>Instructions to see the magic in action</h2>
+            <ol>
+                <li>Load the page <strong>small</strong> browser window. </li>
+                <li>Now increase the size of your UA window</li>
+                <li>You will see how ugly the image appears.</li>
+                <li>Reload the page</li>
+                <li>You now will see an other (breakpoint optimized) image.</li>
+            </ol>
+            <h2>Resolutions / Breakpoints</h2>
+            <ol>
+                <li>@portrait: 320px * 192px (7kb)</li>
+                <li>@landscape: 480px * 288px (17kb)</li>
+            </ol>
+            <!-- END EXPLANATION -->
+        </header>
+        <section id="content">
+
+            <!-- start: picture-element -->
+            <picture>
+
+                <!-- start: Handheld-Devices -->
+                <!-- Source intended for: portrait Layout -->
+                <source media="(orientation: portrait)" src="img/yacht_race@portrait.jpg">
+                <!-- Source intended for: landscape Layout -->
+                <source media="(orientation: landscape)" src="img/yacht_race@landscape.jpg">
+                
+                <!-- start: fallback img-element if picture-element is not supported -->
+                <img src="img/yacht_race@fallback.jpg" alt="A very exciting yacht race.">
+                <!-- end: fallback -->
+
+                <!-- start: alternate text -->
+                <p>A very exciting yacht race.</p>
+                <!-- end: alternate text -->
+
+            </picture>
+            <!-- end: picture-element -->
+
+            <!-- START CODE / SYNTAX -->
+            <h2>The source code:</h2>
+            <pre>
+                <code class="language-markup">
+&lt;!-- start: picture-element --&gt;
+&lt;picture width=&quot;100%&quot; height=&quot;100%&quot;&gt;
+
+    &lt;!-- start: Handheld-Devices --&gt;
+    &lt;!-- Source intended for: Portrait Layout --&gt;
+    &lt;source media=&quot;(orientation: portrait)&quot; src=&quot;img/yacht_race@portrait.jpg&quot;&gt;
+    &lt;!-- Source intended for: Landscape Layout --&gt;
+    &lt;source media=&quot;(orientation: Landscape)&quot; src=&quot;img/yacht_race@Landscape.jpg&quot;&gt;
+    
+    &lt;!-- start: fallback img-element if picture-element is not supported --&gt;
+    &lt;img src=&quot;img/yacht_race@fallback.jpg&quot; alt=&quot;A very exciting yacht race.&quot;&gt;
+    &lt;!-- end: fallback --&gt;
+
+    &lt;!-- start: alternate text --&gt;
+    &lt;p&gt;A very exciting yacht race.&lt;/p&gt;
+    &lt;!-- end: alternate text --&gt;
+
+&lt;/picture&gt;
+&lt;!-- end: picture-element --&gt;            
+                </code>
+            </pre>
+             <!-- END CODE / SYNTAX -->
+
+        </section>
+
+        <!-- code highlighting via prism.js --> 
+        <script src="../assets/prism.js"></script>
+    </div>
+</body>
+</html>
