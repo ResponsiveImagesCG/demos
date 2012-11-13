@@ -74,17 +74,16 @@ If you need to see how other people have done this, check out: http://demos.resp
 <div class="demosource"><code class="language-markup">
 <!-- COPY YOUR DEMO'S CODE HERE --> 
 &lt;picture>
-    &lt;source media="">
-    &lt;source media="">
-    &lt;source media="">
-    &lt;source media="">
-    
-    &lt;!-- fallback img if picture is not supported -->
-    &lt;img src="">
-                
+ 
+    &lt;source media="(min-width: 320px)" src="images/tiny.jpg">
+    &lt;source media="(min-width: 600px)" src="images/small.jpg">
+    &lt;source media="(min-width: 800px)" src="images/original.jpg">
+      
+    &lt;!-- fallback if picture is not supported --> 
+    &lt;img src="images/original.jpg" alt=""> 
+      
     &lt;!-- alternate text -->
-    &lt;p>[[FALLBACK TEXT]]&lt;/p>
-    
+    &lt;p>[[ALT TEXT]]&lt;/p>
 &lt;/picture></code></div>
 </section>
 <section>
