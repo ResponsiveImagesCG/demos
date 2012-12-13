@@ -1,20 +1,8 @@
-Demos
+Avoid download of smaller media demo
 =====
 
-Creating a demo is simple: 
+This is a branch showing how to avoid FOLRI using `min-device-width` or `max-device-width` 
 
-```bash
-git clone git://github.com/ResponsiveImagesCG/demos.git
-```
-Then:
+The working demo is in  [http://medula.cl/temp/no-folri/](http://medula.cl/temp/no-folri/)
 
-1. Put your images into the images/ folder
-2. Replace in any details marked like this [[YOUR TEXT HERE]]
-3. Link to your images using the source elements below, and add the right media queries. 
-4. Add your code
-5. Fill out credits 
-6. Either email us or do a GitHub pull request on the gh-branch (put your files in a folder with a descriptive name).
-
-If you need to see how other people have done this, check out: http://demos.responsiveimages.org
-
-If you need any help, just [email us](public-respimg@w3.org). 
+Note: Couldn't get the demo working with the css styles that came in the template, so I disabled them (seems to be something to do with the floats not letting the boxes expand properly).
