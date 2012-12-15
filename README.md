@@ -15,6 +15,6 @@ Then:
 5. Fill out credits 
 6. Either email us or do a GitHub pull request on the gh-branch (put your files in a folder with a descriptive name).
 
-If you need to see how other people have done this, check out: http://demos.responsiveimages.org
+If you need to see how other people have done this, check out: http://responsiveimages.org/demos
 
 If you need any help, just [email us](public-respimg@w3.org). 
